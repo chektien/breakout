@@ -1,6 +1,7 @@
 #ifndef GAMEH
 #define GAMEH
 
+#include <memory>
 #include <SFML/Graphics.hpp>
 
 namespace boliao {
@@ -19,7 +20,7 @@ namespace boliao {
             void shut(void);
         
         private:
-            sf::
+            std::unique_ptr<sf::RenderWindow> up_window;
     };
 }
 

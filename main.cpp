@@ -4,6 +4,7 @@
 
 int main() {
     boliao::Game game{};
+    game.run();
 
     return 0;
 }
