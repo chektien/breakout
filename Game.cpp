@@ -17,6 +17,7 @@ namespace boliao {
     }
 
     void Game::run() {
+        // game loop
         while (up_window->isOpen()) {
             // poll for events
             sf::Event event;

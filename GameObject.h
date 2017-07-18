@@ -1,5 +1,5 @@
-#ifndef GAMEH
-#define GAMEH
+#ifndef GAMEOBJECTH
+#define GAMEOBJECTH
 
 #include <memory>
 #include <SFML/Graphics.hpp>
@@ -7,19 +7,20 @@
 namespace boliao {
 
     /************************************************************
-     * @Brief The Game class
+     * @Brief The GameObject class
+     * Superclass for all game objects.
      ************************************************************/
-    class Game {
+    class GameObject {
         public:
-            Game();
-            ~Game(void) {}
+            GameObject(std::string& name);
+            ~GameObject(void) {}
 
             void init(void);
             void run(void);
             void shut(void);
 
         private:
-            std::unique_ptr<sf::RenderWindow> up_window;
+            std::string name;
     };
 }
 
