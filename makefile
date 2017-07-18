@@ -9,3 +9,6 @@ clean:
 
 all:
 	g++ -o breakout-app $(SOURCES) $(FLAGS) -L$(LDIRS) -I$(IDIRS) $(LIBS)
+
+debug:
+	g++ -g $(SOURCES) $(FLAGS) -L$(LDIRS) -I$(IDIRS) $(LIBS)
