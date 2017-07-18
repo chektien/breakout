@@ -8,7 +8,6 @@ namespace boliao {
 
     constexpr int windowWidth{1024}, windowHeight{720};
     constexpr int framerate{60};
-test() {
 
     Game::Game() {
         // init window ptr
