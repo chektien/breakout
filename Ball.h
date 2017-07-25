@@ -3,13 +3,14 @@
 
 #include <memory>
 #include <SFML/Graphics.hpp>
+#include "GameObject.h"
 
 namespace boliao {
 
     /************************************************************
      * @Brief The Ball class
      ************************************************************/
-    class Ball {
+    class Ball: public GameObject {
         public:
             Ball(float x, float y, float radius);
             ~Ball(void) {}

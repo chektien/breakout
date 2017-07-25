@@ -7,20 +7,23 @@
 namespace boliao {
 
     /************************************************************
-     * @Brief The GameObject class
+     * @Brief The GameObject abstract class
      * Superclass for all game objects.
+     * @TODO component-based logic
      ************************************************************/
     class GameObject {
         public:
-            GameObject(std::string& name);
+            GameObject(const std::string& name): name_(name) {}
             ~GameObject(void) {}
 
-            void init(void);
-            void run(void);
-            void shut(void);
+            virtual void init(void) {};
+            virtual void update(void) = 0;
+            virtual void shut(void) {};
 
         private:
-            std::string name;
+            std::string name_;
+            bool is_active = true;
+
     };
 }
 
