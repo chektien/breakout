@@ -11,13 +11,14 @@ namespace boliao {
      * @Brief The Ball class
      ************************************************************/
     class Ball: public GameObject {
+        float x_, y_, radius_;
+        std::shared_ptr<sf::CircleShape> up_shape;
+
         public:
             Ball(float x, float y, float radius);
             ~Ball(void) {}
 
-        private:
-            float x_, y_, radius_;
-            std::unique_ptr<sf::CircleShape> up_shape;
+            std::shared_ptr<sf::CircleShape> getShape();
     };
 }
 

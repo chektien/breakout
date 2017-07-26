@@ -17,7 +17,12 @@ namespace boliao {
             ~GameObject(void) {}
 
             virtual void init(void) {};
-            virtual void update(void) = 0;
+
+            virtual void update(const float& delta_time) {
+                if (is_active) {
+                }
+            }
+
             virtual void shut(void) {};
 
         private:

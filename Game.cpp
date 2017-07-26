@@ -35,10 +35,8 @@ namespace boliao {
             up_window->clear(sf::Color::Black);
 
             // create ball
-            Ball ball{5.0f, 5.0f, 10.0f};
-
-
-            up_window->draw(shape);
+            Ball ball{100.0f, 100.0f, 50.0f};
+            up_window->draw(*ball.getShape());
 
             // display all
             up_window->display();
