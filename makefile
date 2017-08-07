@@ -1,4 +1,4 @@
-SOURCES = main.cpp Game.cpp Ball.cpp
+SOURCES = main.cpp Game.cpp Ball.cpp Paddle.cpp Brick.cpp
 FLAGS = -std=c++14
 LDIRS = /usr/local/Cellar/sfml/2.4.2/lib
 IDIRS = /usr/local/Cellar/sfml/2.4.2/include

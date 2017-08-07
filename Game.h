@@ -18,6 +18,8 @@ namespace boliao {
             void run(void);
             void shut(void);
 
+            template<class T1, class T2> bool isCollided(T1& obj1, T2& obj2);
+
         private:
             std::unique_ptr<sf::RenderWindow> up_window;
     };

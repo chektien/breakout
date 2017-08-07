@@ -17,17 +17,13 @@ namespace boliao {
             ~GameObject(void) {}
 
             virtual void init(void) {};
-
-            virtual void update(const float& delta_time) {
-                if (is_active) {
-                }
-            }
-
+            virtual void update(const float& delta_time) = 0;
             virtual void shut(void) {};
 
-        private:
+            inline bool isActive() const { return is_active_; }
+        protected:
             std::string name_;
-            bool is_active = true;
+            bool is_active_ = true;
 
     };
 }
