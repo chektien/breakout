@@ -1,0 +1,2 @@
+make all
+./breakout-app
